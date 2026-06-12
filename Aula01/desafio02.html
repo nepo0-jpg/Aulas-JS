@@ -7,19 +7,23 @@
     <meta name="description" content="...">
     <meta name="keywords" content="sites, web">
     <meta name="author" content="Maria Eduarda">
-    <title>DESAFIO 01 - JVASCRIPT</title>
+    <title>DESAFIO 02 - JVASCRIPT</title>
     <link id="dynamic-favicon" rel="shortcut icon" type="image/x-icon"
         href="https://s1-c.pinimg.com/webapp/favicon_48x48-a0e3ffb6.png">
 </head>
 
 <body>
 
-    <h1>DESAFIO</h1>
+    <h1>Integrando os recursos de interatividade do JS</h1>
+
     <hr> <!-- Linha -->
+
+    <h2></h2>
     <script>
+
         window.alert("Seja bem vindo!");
         let n1 = parseInt(window.prompt("Digite seu 1º númeto? "));
-        let n2 = parseFloat(window.prompt("Digite seu 2º númeto? "));
+        let n2 = parseInt(window.prompt("Digite seu 2º númeto? "));
         let resultado = 0
 
         let operacao = window.prompt("Sua conta vai ser de mais(+) ou menos(-)? ")
@@ -29,7 +33,9 @@
         } else {
             resultado = n1 - n2;
         }
-        window.alert(resultado)
+
+        document.getElementsByTagName("h2")[0].innerText = resultado
+
     </script>
 
 
