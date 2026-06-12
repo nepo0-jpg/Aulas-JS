@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web">
+    <meta name="author" content="Maria Eduarda">
+    <title>EXRCCÍCIO 01 da Aula 02 - JVASCRIPT</title>
+    <link id="dynamic-favicon" rel="shortcut icon" type="image/x-icon"
+        href="https://s1-c.pinimg.com/webapp/favicon_48x48-a0e3ffb6.png">
+</head>
+
+<body>
+
+    <h1>MANIPULANDO ELEMNETOS (TAG) DO HTML ATRAVÉS DO JS</h1>
+    <hr>
+    <div>
+        <p>ESTAMOS APRENDENDO JAVASCRIPT</p>
+        <hr>
+        <p>Aprender é muito legal</p>
+        <p>E para ajudar o aprendizado, é preciso praticar e exercitar</p>
+    </div>
+    <script>
+        const tags_P = document.getElementsByTagName("p")
+        console.log(tags_P)
+        let tags_P_1 = tags_P[0]
+        console.log(tags_P_1)
+        tags_P_1.style.backgroundColor="purple";
+        tags_P_1.style.color="white";
+        tags_P_1.style.textAlign="center";
+        tags_P_1.style.fontSize="25pt"
+
+        let tags_P2_1 = tags_P[1]
+        console.log(tags_P2_1)
+        tags_P2_1.style.backgroundColor="black";
+        tags_P2_1.style.color="white";
+        tags_P2_1.style.textAlign="center";
+        tags_P2_1.style.fontSize="20pt"
+
+        let tags_P3_1 = tags_P[2]
+        console.log(tags_P3_1)
+        tags_P3_1.style.backgroundColor="gray";
+        tags_P3_1.style.color="white";
+        tags_P3_1.style.textAlign="center";
+        tags_P3_1.style.fontSize="20pt"
+
+        tags_P3_1.innerText = "ATURMA DO DEV É MUITO LEGAL!"
+
+        document.write('<h2>UAAU, JAVASCRIPT É MUITO LEGAL!')
+
+    </script>
+
+</body>
+
+</html>
