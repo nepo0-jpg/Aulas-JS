@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web">
+    <meta name="author" content="Maria Eduarda">
+    <title>DESAFIO 01 da Aula 02 - JVASCRIPT</title>
+    <link id="dynamic-favicon" rel="shortcut icon" type="image/x-icon"
+        href="https://s1-c.pinimg.com/webapp/favicon_48x48-a0e3ffb6.png">
+</head>
+
+<body>
+
+    <h1>MANIPULANDO IMAGENS DO HTML ATRAVÉS DO JS</h1>
+    <hr>
+    <div>
+        <img src="img/doberman.jpg" alt="Doberman">
+    </div>
+
+    <script>
+        
+        const tags_src = document.getElementsByTagName("img")
+        console.log(tags_src)
+        let tags_src_1 = tags_src[0]
+        console.log(tags_src_1)
+        tags_src_1.src="img/doberman_apaixonado.jpg"
+
+    </script>
+
+</body>
+
+</html>

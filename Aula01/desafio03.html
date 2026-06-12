@@ -13,32 +13,44 @@
 </head>
 
 <body>
-
-    <h1>Integrando os recursos de interatividade do JS</h1>
-
+    <h1>DESAFIO 03</h1>
     <hr>
-
-    <h2></h2>
+    <p></p>
+ 
     <script>
+        window.alert("realizador de contas");
 
-        window.alert("Seja bem vindo!");
-        let n1 = parseInt(window.prompt("Digite seu 1º númeto? "));
-        let n2 = parseInt(window.prompt("Digite seu 2º númeto? "));
+        let num1 = parseInt(window.prompt("informe o primeiro numero? "));
+        let num2 = parseInt(window.prompt("informe o segundo numero?"))
+        
+        //window.alert(num1,num2); 
+        //console.log(num1,num2);
         let resultado = 0
 
-        let operacao = window.prompt("Sua conta vai ser de mais(+) ou menos(-)? ")
+        let opr = window.prompt("Qual operação sinal de (+) para soma sinal de (-) para subtração (*) para multiplicação (/) para divisão  ?")
+        if (opr == "+"){
+            resultado =  num1 + num2 
 
-        if (operacao == "+") {
-            resultado = n1 + n2;
-        } else {
-            resultado = n1 - n2;
+        }else if (opr == "-"){
+           resultado = num1 - num2
+        }else if (opr == "*" ){
+            resultado = num1 * num2
+        }else{
+
+            if (num2 == 0 ){
+                resultado="Não foi possivel realizar essa conta!"
+            }else{
+                resultado = num1 / num2
+            }
         }
 
-        document.getElementsByTagName("h2")[0].innerText = resultado
+
+    
+        document.getElementsByTagName('p')[0].innerText= 'O resultado da operação e = '+resultado
+        
 
     </script>
-
-
+    
 </body>
 
 </html>
